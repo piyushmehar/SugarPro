@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="OD.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;500;600;700&family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;500;600;700&family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <title>Responsive Contact us Page</title>
+</head>
+<style>
+    *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.navbar{
+    background: #69b4ff; 
+    /* background: linear-gradient(to bottom, #ffffff 0%, #db6286 110%);   */
+    width: 100%;
+    height: 90px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #edf7f6;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    /* float: left; */
+    padding-top: 10px;
+    margin-top: 5px
+
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    margin-left: 800px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #92fb29;
+}
+section{
+    padding: 40px 15%;
+
+}.contact{
+    background: #ff69b4;
+    height:100%;
+    width:100%;
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(2, 2fr) ;
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-img img{
+    max-width: 100%;
+    width:720px;
+    height:auto;
+    border-radius:10px;
+}
+
+.contact-form h1{
+    font-size:80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+span{
+    color:#b4ff69;
+}
+
+.span p{
+    color: green;
+}
+.contact-form p{
+    color:whitesmoke;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom:3.8rem;
+}
+
+.contact-form form{
+    position: relative;
+
+}
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding:17px;
+    border:none;
+    outline: none;
+    background:#191919;
+    color:#fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+
+}
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h1 class="logo" style="font-size: 50px;">Sugarpro</h1>
+        </div>
+        
+        <div class="menu" style="margin-left: 100px; ">
+            <ul style="display: flex; justify-content: center; align-items: center; list-style: none;" >
+                <li><a href="home.html" style="font-size: 20px;">HOME</a></li>
+                <li><a href="blog.html" style="font-size: 20px;">BLOG</a></li>
+                <li><a href="predict.html" style="font-size: 20px;">PREDICT</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="contact-form">
+            <h1 style="text-align: center;">Contact<span> Me</span></h1>
+            <div align="center" style="color: #fff; line-height: 2;" >
+                <h2>Hi 👋, I'm <span>Piyush Mehar</span></h2>
+                <h2 >I’m currently learning CS and passionate about Data Science.</h2>
+                <br>
+                <div style="display: flex; text-align: center; justify-content: space-around;">
+                    <a href="https://github.com/piyushmehar/" target="blank" ><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="https://github.com/piyushmehar/" height="30" width="30"  /></a>
+                    <a href="https://www.linkedin.com/in/piyush-mehar-77299b1b0/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/piyush-mehar-77299b1b0/" height="30" width="30" /></a>
+                    <a href="https://leetcode.com/piyushmehar16/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/piyushmehar16/" height="30" width="30" /></a>
+
+                </div>
+            </div>
+            <form action="" >
+            </form>
+        </div>
+        <div class="contact-img">
+            <img src="{{ url_for('static',filename='images/Untitled.jpg')}}" style="border: 3px solid #b4ff69; border-radius: 50%;">
+        </div>
+    </section>
+</body>
+</html>

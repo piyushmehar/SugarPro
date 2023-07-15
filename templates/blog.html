@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Insurance Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+  
+<style>
+     .span{
+    color: #ff7200;
+    font-size: 40px
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h1 class="logo" style="font-size: 50px;">SugarPro</h1>
+        </div>
+        
+        <div class="menu" style="margin-left: 100px;">
+            <ul >
+                
+                <li><a href="home.html" style="font-size: 20px;">HOME</a></li>
+                <li><a href="predict.html" style="font-size: 20px;">PREDICT</a></li>
+                <li><a href="contact.html" style="font-size: 20px;">CONTACT</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="content">
+        
+        <h1 style="color: #b4ff69;">What is Diabetes !?</h1>
+        <!-- <h2 class="par" style="font-size: 50px; color:#b4ff69; margin-top: 30px;">What is Diabetes !?</h2> -->
+        <br>
+        <p class="par">
+        Diabetes is a chronic medical condition characterized by high levels of glucose (sugar) in the blood. It occurs when the body either doesn't produce enough insulin (a hormone that regulates blood sugar) or cannot effectively use the insulin it produces. This leads to an accumulation of glucose in the bloodstream, which can cause various health problems. There are different types of diabetes, including type 1 (usually diagnosed in childhood or adolescence and requires insulin injections) and type 2 (often associated with lifestyle factors such as obesity and can be managed through medication, diet, and exercise). Uncontrolled diabetes can lead to complications affecting the heart, kidneys, eyes, nerves, and other organs. Proper management and regular monitoring are essential to prevent complications and maintain a healthy lifestyle.
+    </p>
+    <div class="par">
+        <img src="{{ url_for('static',filename='images/preventdia.png')}}" align="right" height="400px" width="400px" style="margin-right: 200px; margin-top: 15px; border: 10px solid #000; border-radius: 50%;">
+        <h2 style="font-size: 30px; color:#b4ff69;">How to effectively control and prevent Diabetes?</h2> <br>
+        To effectively control and prevent diabetes, here are some key guidelines to follow:
+        <div style="margin-left: 30px; line-height:60px;">
+            <ol  type="circle">
+                <li>Healthy Eating</li>  
+                <li>Regular Physical Activity</li> 
+                <li>Stress Management</li> 
+                <li>Quit Smoking</li> 
+                <li>Education and Support</li>
+            </ol>
+        </div>
+    </div>
+        <div class="par">
+            <h3 style="color: #b4ff69;">Healthy Eating</h3>
+            Adopt a balanced and nutritious diet focused on whole foods. Include a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit the intake of sugary foods, processed snacks, and beverages with added sugars. Portion control and regular meal times are also important.        </div>
+        <div class="par">
+            <h3 style="color: #b4ff69;">Regular Physical Activity</h3>
+            Engage in regular exercise to help maintain a healthy weight, improve insulin sensitivity, and manage blood sugar levels. Aim for at least 150 minutes of moderate-intensity aerobic activity per week, along with strength training exercises at least two days a week.        </div>
+        <div class="par">
+            <h3 style="color: #b4ff69;">Stress Management</h3>
+            Chronic stress can impact blood sugar levels. Adopt stress management techniques like exercise, relaxation techniques, meditation, and engaging in activities you enjoy. Seek support from friends, family, or professionals if needed.        </div>
+        <div class="par">
+            <h3 style="color: #b4ff69;">Quit Smoking</h3>
+            If you smoke, take steps to quit. Smoking increases the risk of diabetes complications, such as cardiovascular disease and nerve damage. Quitting smoking can significantly improve your overall health.        </div>
+        <div class="par">
+            <h3 style="color: #b4ff69;">Education and Support</h3>
+            Educate yourself about diabetes management through reliable sources, diabetes education programs, or support groups. Stay informed about the latest research and developments in diabetes care. Seek support from healthcare professionals, diabetes educators, or support groups for guidance, motivation, and emotional support.        </div>
+    </p>
+   
+    
+    <div class="par">
+        <br>
+        <h2 style="font-size: 30px; color:#b4ff69;" class="par">Effect of Diabetes</h2> 
+        <img src="{{ url_for('static',filename='images/diaeffect.jpg')}}" style="height: 400px; width: 700px; border: 10px solid #000; border-radius: 5%;" align="left" >
+        <ol class="par" style="margin-left:750px ; margin-top: 20px; line-height: 2;" align="left">
+            <li>Diabetes can damage blood vessels, leading to complications such as cardiovascular disease, kidney damage, and eye problems.</li>
+            <li>High blood sugar levels can cause nerve damage, resulting in numbness, tingling, and loss of sensation, particularly in the feet and hands.</li>
+            <li>Diabetes can weaken the immune system, making individuals more susceptible to infections and slower healing of wounds.</li>
+            <li>Uncontrolled diabetes can lead to diabetic ketoacidosis (DKA), a serious condition characterized by high blood ketone levels, dehydration, and electrolyte imbalances.</li>
+            <li>Long-term uncontrolled diabetes increases the risk of other health problems, including stroke, nerve damage, foot ulcers, amputations, and cognitive decline.</li>
+          </ol>
+          <br>
+    </div>
+    <div class="par">
+        <br> <br>
+        <h2 style="font-size: 30px; color:#b4ff69;" class="par">Practical tips for managing Blood Sugar Levels</h2>
+        <ol class="par" style="margin-left:30px ; line-height: 2;">
+          <li>Eat balanced meals with a combination of carbohydrates, proteins, and healthy fats to help regulate blood sugar levels</li>
+          <li>Monitor portion sizes to avoid overeating and maintain stable blood sugar levels throughout the day.</li>
+          <li>Choose low glycemic index foods that have a slower impact on blood sugar, such as whole grains, vegetables, and legumes.</li>
+          <li>Engage in regular physical activity, such as brisk walking or cycling, to improve insulin sensitivity and manage blood sugar levels.</li>
+          <li>Stay hydrated and limit sugary beverages, opting for water or unsweetened drinks instead.</li>
+        </ol>
+    </div>
+
+    <div class="par">
+        <br>
+        <h2 style="font-size: 40px; color:#b4ff69;" class="par" align="center" >Diet Plan</h2>     
+        <img src="{{ url_for('static',filename='images/dietplan.jpg')}}" style="height: 700px; width: 1000px; display: block;margin-left: auto;margin-right: auto; width: 50%;  border: 10px solid #000; border-radius: 5%;" align="center">   
+    </div>
+
+        <hr ><br>
+    <p class="par" style="font-size: 25px; color: #fff;" align="center"  >
+        These tips are general recommendations. It's essential to consult with a healthcare professional for personalized advice based on your specific health needs and medical history.
+
+
+</body>
+</html>

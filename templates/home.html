@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+      <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <!-- <img src="F:\MyDS\projects\SugarPro\logo.jpg" /> -->
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo" style="font-size: 50px;">SugarPro</h1>
+            </div>
+            
+            <div class="menu" style="margin-left: 100px;">
+                <ul >
+                    
+                    <li><a href="blog.html" style="font-size: 20px;">BLOG</a></li>
+                    <li><a href="predict.html" style="font-size: 20px;">PREDICT</a></li>
+                    <li><a href="contact.html" style="font-size: 20px;">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>  
+        <div>
+            <img src="{{ url_for('static',filename='images/homepage.png')}}" height="500px" width="600px" style="margin-top:140px; margin-right: 90px; border-radius:15px; border: 3px solid #000; border-radius: 5%;" align="right" >
+        </div>
+        <div class="content" >
+            <br>
+            <h1 align="center" style="color: #b4ff69;">Small changes today can make a big  difference in managing diabetes.</h1>
+            <p style="line-height: 2; text-align: justify; margin-right: 700px; margin-top: 50px; font-family: 'Open Sans'; font-size: 25px; color:#fff ; text-shadow: 0 0 1px #000,0 0 1px #000;">
+                
+             Introducing SugarPro, your ultimate diabetes assistant! With a 90% accuracy in predicting diabetes, SugarPro is a web-based platform powered by advanced machine learning. It offers personalized insights, comprehensive support, and practical tools for effective diabetes control and prevention. 
+             <br> Discover information about diabetes, tailored diet and exercise plans, and more. User-friendly and empowering, SugarPro is here to help you conquer diabetes and lead a healthier life. Start your journey to a brighter future with SugarPro today!
+                <!-- <img src="F:\MyDS\projects\SugarPro\logo.jpg" /> -->
+                <!-- <img src="{{ url_for('static',filename='images/logo.jpg')}}"> -->
+
+            </p>
+                <!-- <div style="display: flex; justify-content: end; align-items: center;">
+
+                    <button class="cn" ><a href="predict.html">Check Now</a></button>
+                </div> -->
+
+            
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

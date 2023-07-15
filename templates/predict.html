@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage Design</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+  #specifyColor {
+      accent-color: #ff7200;
+  }
+</style>
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h1 class="logo" style="font-size: 50px;">SugarPro</h1>
+        </div>
+        
+        <div class="menu" style="margin-left: 100px;">
+            <ul >
+                <li><a href="home.html" style="font-size: 20px;">HOME</a></li>
+                <li><a href="blog.html" style="font-size: 20px;">BLOG</a></li>
+                <li><a href="contact.html" style="font-size: 20px;">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+ 
+    <!-- Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	NewBMI	NewInsulinScore	NewGlucose -->
+ <form class="form1" action="{{ url_for('predict')}}" method="POST">
+  <label for="age">Pregnancies:</label>
+  <input id="age" type="number" name="Pregnancies" placeholder="Enter total number of Pregnancies">
+
+  <label for="Glucose">Glucose</label>
+  <input id="Glucose" step="0.01" type="number" name="Glucose" placeholder="Enter Glucose Level">
+
+  <label for="BloodPressure">Blood Pressure:</label>
+  <input id="BloodPressure" step="0.01" type="number" name="BloodPressure" placeholder="Enter BP Level">
+
+  <label for="SkinThickness">Skin Thickness</label>
+  <input id="SkinThickness" step="0.01" type="number" name="SkinThickness" placeholder="Enter Skin Thickness">
+
+  <label for="Insulin">Insulin</label>
+  <input id="Insulin" step="0.01" type="number" name="Insulin" placeholder="Enter Insulin Level">
+
+  <label for="BMI">BMI</label>
+  <input id="bmi"  step="0.01" type="number" name="bmi" placeholder="Enter Body Mass Index">
+
+  <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+  <input id="DiabetesPedigreeFunction" step="0.001" type="number" name="DiabetesPedigreeFunction" placeholder="Enter DPF">
+
+  <label for="Age">Age</label>
+  <input id="Age" type="number" name="Age" placeholder="Enter your Age">
+
+  
+<div class="btn1">
+
+  <button class="btn">Submit</button>
+</div>
+
+</form>
+<div>
+  <h1 style="color: #b4ff69; text-align: center; padding: 2%;">{{ prediction_text0}}</h1> <h1 style="color: #ff0000; text-align: center; padding: 2%;">{{ prediction_text1 }}</h1>
+</div>
+<!-- <div style="text-align: left; margin-left: 100px; padding: 1%; color: yellow;"> 
+  {{bmilevel}} <br>
+  {{insulinlevel}} <br>
+  {{glucoselevel}}
+</div> -->
+
+</div>
+</body>
+</html>

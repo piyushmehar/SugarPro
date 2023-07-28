@@ -22,8 +22,8 @@ It also contains the diet plan for healthier living | ![dietplan](https://github
 **Prediction Page**
 It considers factors including your pregnancies, glucose levels, blood pressure, skin thickness, insulin, BMI, Diabetes Pedigree Function, and age|![predict](https://github.com/piyushmehar/SugarPro/assets/80638299/bcfbd8f1-86e1-4f8e-b70c-b4144a06ee48)
 **Predicition Result**
-On the basis of above parameters it shows the predicted result| ![cool](https://github.com/piyushmehar/SugarPro/assets/80638299/c6355b38-f80a-4d00-a7fe-835a18cf804e)
- | ![oops](https://github.com/piyushmehar/SugarPro/assets/80638299/5c160faf-6e2d-4c58-bc8e-b156ef766745)
+On the basis of above parameters it shows the predicted result <br> Cool! | ![cool](https://github.com/piyushmehar/SugarPro/assets/80638299/c6355b38-f80a-4d00-a7fe-835a18cf804e)
+Oops! | ![oops](https://github.com/piyushmehar/SugarPro/assets/80638299/5c160faf-6e2d-4c58-bc8e-b156ef766745)
 **Contact Page**
 It contains my info |![contact](https://github.com/piyushmehar/SugarPro/assets/80638299/3114050e-fdc8-478d-a68b-d1b45d0a6507)
 

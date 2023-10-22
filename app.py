@@ -35,7 +35,6 @@ def predict():
     Age = request.form.get('Age')
 
     print(Pregnancies, Glucose,BloodPressure ,SkinThickness , Insulin , bmi , DiabetesPedigreeFunction ,Age)
-    
     bmi = float(bmi)
     if(bmi <= 18):
         NewBMI = 1

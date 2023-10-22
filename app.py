@@ -1,8 +1,6 @@
 from   flask import Flask, render_template,request
 import numpy as np
 import pickle 
-
-
 app = Flask(__name__)
 model = pickle.load(open('F:\MyDS\projects\SugarPro\model.pkl' ,'rb'))
 
